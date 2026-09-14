@@ -4,5 +4,5 @@
 /**
  * 
  */
-module PrakPBO_C_2511532029 {
+module PrakPBO_C {
 }
