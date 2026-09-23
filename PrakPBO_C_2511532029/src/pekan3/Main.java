@@ -34,11 +34,16 @@ public class Main {
                     double saldoAwal = scanner.nextDouble();
                     scanner.nextLine(); // Clear buffer
                     
-                    // Meminta input PIN 6 digit
-                    System.out.print("Buat PIN (6 digit)      : ");
-                    String pinAwal = scanner.nextLine();
+                    String pinAwal;
+                    while (true) {
+                        System.out.print("Buat PIN (6 digit angka): ");
+                        pinAwal = scanner.nextLine();
+                        if (pinAwal.matches("\\d{6}")) {
+                            break;
+                        }
+                        System.out.println("PIN hanya boleh berisi 6 digit angka!");
+                    }
 
-                    // Menginstansiasi objek Rekening baru dengan PIN
                     akunAktif = new Rekening(nomor, nama, saldoAwal, pinAwal);
                     break;
 
@@ -61,8 +66,15 @@ public class Main {
                         break;
                     }
 
-                    System.out.print("Masukkan PIN Anda: ");
-                    String pinTarik = scanner.nextLine();
+                    String pinTarik;
+                    while (true) {
+                        System.out.print("Masukkan PIN Anda: ");
+                        pinTarik = scanner.nextLine();
+                        if (pinTarik.matches("\\d{6}")) {
+                            break;
+                        }
+                        System.out.println("PIN hanya boleh berisi 6 digit angka!");
+                    }
 
                     if (akunAktif.otentikasi(pinTarik)) {
                         System.out.print("Masukkan nominal tarik: ");
@@ -103,8 +115,15 @@ public class Main {
                         break;
                     }
 
-                    System.out.print("Masukkan PIN Anda: ");
-                    String pinMutasi = scanner.nextLine();
+                    String pinMutasi;
+                    while (true) {
+                        System.out.print("Masukkan PIN Anda: ");
+                        pinMutasi = scanner.nextLine();
+                        if (pinMutasi.matches("\\d{6}")) {
+                            break;
+                        }
+                        System.out.println("PIN hanya boleh berisi 6 digit angka!");
+                    }
 
                     // Verifikasi PIN
                     if (akunAktif.otentikasi(pinMutasi)) {

@@ -15,10 +15,10 @@ public class Rekening {
 		this.namaPemilik = nama;
 		this.saldo = saldoAwal;
 		
-		if (pinAwal.length() == 6) {
+		if (pinAwal != null && pinAwal.matches("\\d{6}")) {
 			this.pin = pinAwal;
 		} else {
-			System.out.println("Peringatan PIN harun 6 digit! Menggunakan PIN default 123456");
+			System.out.println("Peringatan PIN harus 6 digit angka! Menggunakan PIN default 123456");
 			this.pin = "123456";
 		}
 		this.riwayatTransaksi = new ArrayList<>();
@@ -30,6 +30,9 @@ public class Rekening {
 	public double getSaldo() {return saldo;}
 	
 	public boolean otentikasi(String inputPin) {
+		if (inputPin == null || !inputPin.matches("\\d{6}")) {
+			return false;
+		}
 		return this.pin.equals(inputPin);
 	}
 	
