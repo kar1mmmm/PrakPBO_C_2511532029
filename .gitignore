@@ -1,0 +1,21 @@
+# Java compilation output
+*.class
+/bin/
+/out/
+/build/
+/target/
+
+# Generated source list
+/sources.txt
+
+# IDE metadata
+.classpath
+.project
+.settings/
+.vscode/
+.idea/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+desktop.ini
