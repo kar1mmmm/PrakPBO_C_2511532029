@@ -1,0 +1,33 @@
+# Java build output
+*.class
+bin/
+build/
+out/
+target/
+
+# Java IDE files
+.idea/
+*.iml
+.vscode/
+nbproject/private/
+
+# Package and archive files
+*.jar
+*.war
+*.ear
+*.zip
+
+# Word and PDF documents
+*.doc
+*.docx
+*.pdf
+
+# Logs and temporary files
+*.log
+*.tmp
+*.bak
+*.swp
+
+# Operating system files
+.DS_Store
+Thumbs.db
