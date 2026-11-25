@@ -1,0 +1,8 @@
+Praktikum OOP P08 - SOLID (Toko Online UMKM)
+
+1. Buka folder p08-starter di VS Code (File > Open Folder).
+2. Isi src/tools/StudentInfo.java (NIM hanya angka).
+3. Ikuti Modul-P08-SOLID.pdf mulai L0. SelfCheck awal yang benar: 4/20.
+4. bahan/L3/FakeCheckoutDemo.java disalin di langkah L3.7.
+   bahan/L5/ReviewMe.java cukup dibaca di L5.
+5. Kumpulkan P13-<NIM>.zip dan LK-P13-<NIM>.pdf di akhir sesi.
