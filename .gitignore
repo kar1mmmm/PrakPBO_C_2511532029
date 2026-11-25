@@ -21,6 +21,8 @@ nbproject/private/
 *.doc
 *.docx
 *.pdf
+!LKP-08-2511532029.pdf
+!**/LKP-08-2511532029.pdf
 
 # Logs and temporary files
 *.log
